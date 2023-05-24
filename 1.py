@@ -1,12 +1,13 @@
 from PIL import Image
 
-img = Image.open("gift.jpg")
+gift = Image.open("gift.jpg")
 
 left = 150
 top = 150
 right = 500
 bottom = 500
 
-img_crop = img.crop((left, top, right, bottom))
+gift_crop = gift.crop((left, top, right, bottom))
+gift_crop.save("new_gift.jpg")
 
-img_crop.save("new_gift.jpg")
+print('Готово, изменения сохранены.')
